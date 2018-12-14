@@ -1,5 +1,7 @@
-<h1>Tag: {{ this.tag }}</h1>
-<h1>Items:</h1>
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<h2>Items tagged: {{ this.tag }}</h2>
 <ul>
   {% for i in this.items %}
     <li><a href="{{ i|url }}">{{ i._id }}</a></li>
@@ -7,3 +9,4 @@
     <li><em>No items.</em></li>
   {% endfor %}
 </ul>
+{% endblock %}
