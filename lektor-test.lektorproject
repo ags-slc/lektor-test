@@ -1,0 +1,5 @@
+[project]
+name = Lektor Test
+
+[packages]
+lektor-tags = 0.2
