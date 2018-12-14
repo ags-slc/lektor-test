@@ -17,4 +17,13 @@
   </p>
   {{ post.body }}
   </div>
+  {% if post.tags %}
+  <ul>
+    {% for t in post.tags -%}
+      <li>
+        <a href="{{ ('/blog@tag/' ~ t.lower())|url }}">
+          All posts tagged {{ t }}</a>
+    {% endfor %}
+  </ul>
+  {% endif %}
 {% endmacro %}

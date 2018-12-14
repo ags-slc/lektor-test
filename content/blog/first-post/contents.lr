@@ -4,6 +4,9 @@ pub_date: 2018-12-14
 ---
 author: Andrew Spencer
 ---
-body:
+body: This is an example blog post.  Not much here but that's not the point :)
+---
+tags:
 
-This is an example blog post.  Not much here but that's not the point :)
+lektor
+plugin
